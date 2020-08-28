@@ -1,0 +1,19 @@
+{
+  "name": "commander",
+  "version": "1.0.0",
+  "description": "template for Command Line Interface written in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mhdi-kr/Commander.git"
+  },
+  "author": "Mahdi Karimi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mhdi-kr/Commander/issues"
+  },
+  "homepage": "https://github.com/Mhdi-kr/Commander#readme"
+}
