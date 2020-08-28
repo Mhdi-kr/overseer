@@ -1,5 +1,5 @@
 {
-  "name": "commander",
+  "name": "overseer",
   "version": "1.0.0",
   "description": "template for Command Line Interface written in TypeScript",
   "main": "index.js",
