@@ -2,7 +2,7 @@
   "name": "overseer",
   "version": "1.0.0",
   "description": "template for Command Line Interface written in TypeScript",
-  "main": "src/main.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "jest"
   },
