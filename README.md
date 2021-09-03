@@ -5,20 +5,13 @@ Self-hosted IoT monitoring platform to gather and visualize data from multiple I
 I follow the MVP (Minimum viable product) model for my personal projects. If I could design a system which can work with one nodeMCU device, one sensor and very simple UI for client-side, I would be able to build upon it, add more modules and improve the UI later on. so my initial plan is to create a closed circuit that works, then iterate over it and improve things as fast as possible.
 ## How to run the project on my server
 
-1. Make sure you have Node.js and NPM installed using [Official Node releases and installations](https://nodejs.org/en/download/).
+1. Clone this repository using git commands
+2. Make sure you have Node.js, NPM, MongoDB and yarn package manager installed.
+- [Official Node releases and installations](https://nodejs.org/en/download/)
+- [Official mongoDB releases](https://docs.mongodb.com/manual/installation/)
+- [Official Yarn installation](https://yarnpkg.com/getting-started/install)
 
-2. Install yarn using npm
-
-```bash
-$ npm install -g yarn
-```
-3. Make sure you have MongoDB database already installed using [Official mongoDB releases](https://docs.mongodb.com/manual/installation/)
-4. Clone this repository using git commands
-5. Install project dependencies using yarn package manager
-```bash
-$ yarn install
-```
-6. Run the project packages (react client and express server) in parallel using `dev` script
+3. Run the project packages (react client and express server) in parallel using `dev` script
 ```bash
 $ yarn run dev
 ```
@@ -31,6 +24,10 @@ You can connect any kind of IoT device to overseer as long as it can support MQT
 Any of these examples subscribe to one or multiple topics, transfer data, and then the corresponding widget in the overseer client application will represent the real-time MQTT state. based on the type of the widget you can `read` or `write` or `read and write` data to specific topics.
 
 Following code is provided for NodeMCU hardware to connect to this application.
+
+Make sure you have following dependencies installed on your Arduino IDE.
+- [Arduino core for ESP8266 WiFi chip](https://github.com/esp8266/Arduino)
+- [Arduino Client for MQTT](https://github.com/knolleary/pubsubclient)
 
 ```c++
 #include <ESP8266WiFi.h>
