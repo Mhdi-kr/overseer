@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Kitchen Node",
+        "widgets": [
+            {
+                "type": "TOGGLE",
+                "value": false
+            }
+        ]
+    }
+]
